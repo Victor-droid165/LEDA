@@ -2,10 +2,10 @@ package br.ledaimpl.stack;
 
 import java.util.EmptyStackException;
 
-public class LinkedStackImpl<T> implements Stack<T>{
+public class RecursiveLinkedStackImpl<T> implements Stack<T>{
 
     private T data;
-    private LinkedStackImpl<T> next;
+    private RecursiveLinkedStackImpl<T> next;
 
     @Override
     public T pop() {
@@ -26,7 +26,7 @@ public class LinkedStackImpl<T> implements Stack<T>{
         if(isEmpty())
             this.data = obj;
         else{
-            LinkedStackImpl<T> lastTop = new LinkedStackImpl<T>();
+            RecursiveLinkedStackImpl<T> lastTop = new RecursiveLinkedStackImpl<T>();
             lastTop.data = this.data;
             lastTop.next = this.next;
 

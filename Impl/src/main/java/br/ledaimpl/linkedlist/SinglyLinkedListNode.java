@@ -1,16 +1,16 @@
-package br.ledaimpl.queue;
+package br.ledaimpl.linkedlist;
 
-public class SingleLinkedListNode<T> {
+public class SinglyLinkedListNode<T> {
     private T data;
-    private SingleLinkedListNode<T> next;
+    private SinglyLinkedListNode<T> next;
     
-    public SingleLinkedListNode(){}
+    public SinglyLinkedListNode(){}
     
-    public SingleLinkedListNode(T data){
+    public SinglyLinkedListNode(T data){
         this.data = data;
     }
     
-    public SingleLinkedListNode(T data, SingleLinkedListNode<T> next){
+    public SinglyLinkedListNode(T data, SinglyLinkedListNode<T> next){
         this.data = data;
         this.next = next;
     }
@@ -19,7 +19,7 @@ public class SingleLinkedListNode<T> {
         return data;
     }
 
-    public SingleLinkedListNode<T> getNext() {
+    public SinglyLinkedListNode<T> getNext() {
         return next;
     }
 
@@ -27,7 +27,7 @@ public class SingleLinkedListNode<T> {
         this.data = data;
     }
 
-    public void setNext(SingleLinkedListNode<T> next) {
+    public void setNext(SinglyLinkedListNode<T> next) {
         this.next = next;
     }
 }

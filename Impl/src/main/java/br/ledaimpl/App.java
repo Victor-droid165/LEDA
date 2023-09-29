@@ -1,6 +1,5 @@
 package br.ledaimpl;
 
-import br.ledaimpl.queue.RecursiveLinkedQueueImpl;
 import br.ledaimpl.stack.StackUsingTwoQueuesImpl;
 
 public class App 

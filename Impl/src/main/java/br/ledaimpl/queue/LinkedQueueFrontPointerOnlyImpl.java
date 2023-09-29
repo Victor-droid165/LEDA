@@ -2,11 +2,11 @@ package br.ledaimpl.queue;
 
 import java.util.EmptyStackException;
 
-import br.ledaimpl.linkedlist.DoublyLinkedListNode;
+import br.ledaimpl.linkedlist.SinglyLinkedListNode;
 
 public class LinkedQueueFrontPointerOnlyImpl<T> implements Queue<T> {
 
-    private DoublyLinkedListNode<T> head;
+    private SinglyLinkedListNode<T> head;
 
     @Override
     public T dequeue() {
@@ -20,11 +20,11 @@ public class LinkedQueueFrontPointerOnlyImpl<T> implements Queue<T> {
     @Override
     public void enqueue(T obj) {
         if(isEmpty())
-            this.head = new DoublyLinkedListNode<>(obj);
+            this.head = new SinglyLinkedListNode<>(obj);
         else{
-            DoublyLinkedListNode<T> node = head;
+            SinglyLinkedListNode<T> node = head;
             while(node.getNext() != null) node = node.getNext();
-            node.setNext(new DoublyLinkedListNode<T>(obj));
+            node.setNext(new SinglyLinkedListNode<T>(obj));
         }
     }
 
